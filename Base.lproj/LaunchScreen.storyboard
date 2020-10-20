@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController title="Launch View" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQW-9o-G1i">
+                                <rect key="frame" x="104" y="419" width="206" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can you be more mindful of your spending?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAy-iJ-Qjf">
+                                <rect key="frame" x="25" y="514" width="364" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="square.fill.and.line.vertical.and.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="I4Z-IG-WaW">
+                                <rect key="frame" x="104" y="144" width="206" height="19.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41176470590000003" green="0.74509803919999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AQW-9o-G1i" firstAttribute="centerX" secondItem="vAy-iJ-Qjf" secondAttribute="centerX" id="1jT-oX-P3M"/>
+                            <constraint firstItem="vAy-iJ-Qjf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="1qJ-zG-feq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I4Z-IG-WaW" secondAttribute="trailing" constant="104" id="50J-iO-lid"/>
+                            <constraint firstItem="vAy-iJ-Qjf" firstAttribute="top" secondItem="AQW-9o-G1i" secondAttribute="bottom" constant="37" id="E4G-ot-fMd"/>
+                            <constraint firstItem="I4Z-IG-WaW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="I50-yA-GgD"/>
+                            <constraint firstItem="AQW-9o-G1i" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="NQq-BQ-0Oy"/>
+                            <constraint firstItem="AQW-9o-G1i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="375" id="SNN-A9-lym"/>
+                            <constraint firstItem="AQW-9o-G1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="cXx-li-ZzE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vAy-iJ-Qjf" secondAttribute="trailing" constant="25" id="oOw-VL-PVJ"/>
+                            <constraint firstItem="I4Z-IG-WaW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="vzs-Ml-XNk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQW-9o-G1i" secondAttribute="trailing" constant="104" id="wGF-gc-nWW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RMl-bA-IaS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.fill.and.line.vertical.and.square" catalog="system" width="128" height="83"/>
+    </resources>
+</document>
